@@ -1,0 +1,31 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "description": "This is react practice",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijayraj627/React-Practice.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "vijayraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijayraj627/React-Practice/issues"
+  },
+  "homepage": "https://github.com/vijayraj627/React-Practice#readme",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
