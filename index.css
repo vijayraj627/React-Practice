@@ -1,3 +1,51 @@
-h1{
-    color: darkred;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #f7b922;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.nav-items>ul{
+    display: flex;
+}
+
+.nav-items>ul>li{
+    margin: 25px;
+    font-size: 25px;
+    list-style-type: none;
+    font-weight: 900;
+    cursor: pointer;
+    color: #f7b922;
+}
+
+.search{
+    padding: 10px;
+}
+
+.card-item{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px 150px;
+    margin: 5px;
+    background-color: #f7b9224a;
+}
+:hover .card-item{
+    border: 1px solid #f7b922;
+    pointer-events: none;
+}
+
+.card-item-img{
+    height: 100%;
+    width: 100%;
+}
+.btn-topStar{
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #f7b922;
+    background-color: #f7b9224a;
 }
