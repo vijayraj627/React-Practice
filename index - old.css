@@ -1,0 +1,91 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #f7b922;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.nav-items>ul{
+    display: flex;
+}
+
+.nav-items>ul>li{
+    margin: 25px;
+    font-size: 25px;
+    list-style-type: none;
+    font-weight: 900;
+    cursor: pointer;
+    color: #f7b922;
+}
+.nav-items>ul>li>a{
+    text-decoration: none;
+    color: #f7b922;
+}
+/* :hover .nav-items>ul>li>a{
+    color: black;
+} */
+.body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.body a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.search{
+    padding: 10px;
+}
+
+.card-item{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 5px;
+    background-color: #f7b9224a;
+}
+/* :hover .card-item{
+    border: 1px solid #f7b922;
+    pointer-events: none;
+} */
+
+.card-item-img{
+    height: 80%;
+    width: 100%;
+}
+.btn-topStar{
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #f7b922;
+    background-color: #f7b9224a;
+}
+.login{
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #f7b922;
+    background-color: #f7b9224a;
+}
+.search{
+    display: flex;
+}
+.search-box{
+    margin-inline: 5px;
+}
+.search-button{
+    cursor: pointer;
+    border: 1px solid #f7b922;
+    background-color: #f7b9224a;
+}
+.card-item p{
+    margin: unset;
+}
+
+.user{
+    padding: 10px;
+    border: 1px solid #000000;
+}
