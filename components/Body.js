@@ -11,7 +11,7 @@ const Body = () => {
     const [filterItems, setFilteredItems] = useState([]);
     const onlineStatus = useOnlineStatus();
     const RestaurantsOpen = RestaurantOpenClose(Card);
-    const {loginInfo, setUserName} = useContext(UserContext);
+    const {loginInfo, setLoginInfo} = useContext(UserContext);
     
     useEffect(()=>{
         fetchData();
@@ -22,8 +22,7 @@ const Body = () => {
 
         const json =await  data.json();
         setMenuItems(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredItems(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)  
-        console.log(json)
+        setFilteredItems(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     if(onlineStatus === false){
@@ -55,7 +54,7 @@ const Body = () => {
                 </button>
 
                 <label className="ml-10">Enter User : </label>
-                <input type="text" className="bg-slate-300 p-2" value={loginInfo} onChange={(e)=>setUserName(e.target.value)}/>
+                <input type="text" className="bg-slate-300 p-2" value={loginInfo} placeholder="Enter Your UserName" onChange={(e)=>setLoginInfo(e.target.value)}/>
                
                 <div className="flex flex-wrap flex-row">
                     

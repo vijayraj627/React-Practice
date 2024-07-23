@@ -14,7 +14,6 @@ const Card = (props) =>{
 }
 export const RestaurantOpenClose = (Card) =>{
     return (props) =>{
-        console.log("+++")
         return(
             <div>
                 <label className="absolute bg-black text-white m-8 p-2">Open</label>

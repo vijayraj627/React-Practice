@@ -8,7 +8,10 @@ import Error from "./Error";
 import { createBrowserRouter,RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./RestaurantMenu";
 import UserContext from "../utils/userContext";
+import store from "../utils/store";
+import { Provider } from "react-redux";
 import { useEffect} from "react";
+import ShowCartItems from "./ShowCartItems";
 const App = () =>{
 
 
@@ -22,12 +25,14 @@ const App = () =>{
     },[]);
 
     return(
+        <Provider store={store}>
         <UserContext.Provider value = {{loginInfo : userName, setUserName}}>
         <div className="App">
             <Header/>
             <Outlet/>
         </div>
         </UserContext.Provider>
+        </Provider>
     )
 }
 
@@ -51,6 +56,10 @@ const appRouter = createBrowserRouter([
             {
                 path : "/restaurants/:resId",
                 element : <RestaurantMenu/>
+            },
+            {
+                path : "/cart",
+                element : <ShowCartItems/>
             }
         ],
         errorElement : <Error/>
